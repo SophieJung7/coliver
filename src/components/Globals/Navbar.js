@@ -32,7 +32,7 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+      <nav className="navbar navbar-expand-sm navbar-light">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" />
           {/* https://www.iconfinder.com/icons/185113/coffee_streamline_icon
@@ -50,8 +50,11 @@ https://www.iconfinder.com/webalys */}
           <ul className="navbar-nav mx-auto">
             {this.state.links.map(link => {
               return (
-                <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link text-capitalize">
+                <li key={link.id} className="navText-customize nav-item">
+                  <Link
+                    to={link.path}
+                    className="navText-customize nav-link text-uppercase"
+                  >
                     {link.text}
                   </Link>
                 </li>

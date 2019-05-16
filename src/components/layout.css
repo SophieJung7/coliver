@@ -1,14 +1,20 @@
 :root {
-  --mainBrown: #d2b48c;
-  --mainBlue: #1e90ff;
-  --mainGrey: #ece8dc;
-  --mainWhite: #fff;
-  --mainDark: #222;
+  --mainBrown: #5d4037;
+  --textLightBrown: #d7ccc8;
+  --darkGrey: #9e9e9e;
+  --lightGrey: #bdbdbd;
+  --textGrey: #757575;
+  --mainWhite: #ffffff;
+  --mainBlack: #212121;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   background: var(--mainWhite);
-  color: var(--mainDark);
+  color: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
@@ -22,22 +28,28 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 
-.text-blue {
-  color: var(--mainBlue);
+.navText-customize {
+  color: var(--mainBlack) !important;
+  font-size: 1.5rem;
 }
 
 .cart-icon {
   cursor: pointer;
-  color: var(--mainBlue);
+  color: var(--mainBlack);
   font-size: 2rem;
 }
 
 .home-background {
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
   justify-content: center;
   /* horizontally center */
   background-position: center;
   background-size: cover;
+}
+
+.background-brand {
+  color: var(--mainBrown) !important;
+  font-size: 10rem;
 }

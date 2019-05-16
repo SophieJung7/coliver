@@ -4,9 +4,10 @@ import BackgroundImage from "gatsby-background-image"
 const BackgroundModule = ({ backgroundImg, styleClass, title, children }) => {
   return (
     <BackgroundImage className={styleClass} fluid={backgroundImg}>
-      <h1 className="title text-white text-uppercase text-center display-4 font-weight-bold">
+      <h1 className="background-brand text-uppercase text-center display-4 font-weight-bold">
         {title}
       </h1>
+      <div>We deliver great coffee to your door.</div>
       {children}
     </BackgroundImage>
   )
