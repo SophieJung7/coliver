@@ -31,3 +31,13 @@ h6 {
   color: var(--mainBlue);
   font-size: 2rem;
 }
+
+.home-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* horizontally center */
+  background-position: center;
+  background-size: cover;
+}
