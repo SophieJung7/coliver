@@ -2,14 +2,16 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import "./bootstrap.min.css"
-import "./layout.css"
+import "./layout.scss"
 
-import Navbar from "./Globals/Navbar"
+import Navbar from "./Globals/Navbar/Navbar"
+import Footer from "./Globals/Footer/Footer"
 
 const Layout = ({ children }) => (
   <>
     <Navbar />
     {children}
+    <Footer />
   </>
 )
 

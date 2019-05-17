@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import BackgroundModule from "../components/Globals/BackgroundModule/BackgroundModule"
 import Info from "../components/Home/Info/Info"
 
-const IndexPage = ({ data }) => {
+const AboutPage = ({ data }) => {
   const backgroundImg = data.img.childImageSharp.fluid
 
   return (
@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => {
       <SEO title="Coliver" keywords={[`gatsby`, `application`, `react`]} />
       <BackgroundModule
         backgroundImg={backgroundImg}
-        styleClass="background_customize"
-        title={`We deliver great coffee to your home`}
+        styleClass="about_background"
+        title="About us"
       />
       <Info />
     </Layout>
@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "home-background.jpg" }) {
+    img: file(relativePath: { eq: "about-background.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -33,4 +33,4 @@ export const query = graphql`
     }
   }
 `
-export default IndexPage
+export default AboutPage

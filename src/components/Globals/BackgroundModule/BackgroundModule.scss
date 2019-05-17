@@ -1,0 +1,35 @@
+$mainBrown: #5d4037;
+$textLightBrown: #d7ccc8;
+$darkGrey: #9e9e9e;
+$lightGrey: #bdbdbd;
+$textGrey: #757575;
+$mainWhite: #ffffff;
+$mainBlack: #212121;
+$mainGreen: #006400;
+$lightGreen: #6b8e23;
+
+.background_customize,
+.about_background {
+  min-height: 92vh !important;
+  align-items: center;
+  justify-content: center;
+  /* horizontally center */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+
+  &-bigMessage {
+    color: $mainGreen !important;
+    font-size: 10rem;
+  }
+
+  &-smallMessage {
+    color: $lightGreen !important;
+    font-size: 3rem;
+    display: block;
+  }
+}
+
+.about_background {
+  min-height: 60vh !important;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.svg"
 import { FaCartArrowDown } from "react-icons/fa"
+import "./Navbar.scss"
 
 export default class Navbar extends Component {
   state = {
@@ -32,35 +32,35 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-light">
-        <Link to="/" className="navbar-brand">
-          <img src={logo} alt="logo" />
+      <nav className="navbar_customize navbar navbar-expand-sm navbar-light">
+        <Link to="/" className="navbar_customize-brand navbar-brand">
+          COLIVER
           {/* https://www.iconfinder.com/icons/185113/coffee_streamline_icon
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/webalys */}
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar_customize-toggler navbar-toggler"
           type="button"
           onClick={this.navbarHandler}
         >
           <span className="navbar-toggler-icon" />
         </button>
         <div className={this.state.css}>
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar_customize-menu navbar-nav mx-auto">
             {this.state.links.map(link => {
               return (
-                <li key={link.id} className="navText-customize nav-item">
+                <li key={link.id} className="nav-item">
                   <Link
                     to={link.path}
-                    className="navText-customize nav-link text-uppercase"
+                    className="navbar_customize-menu-text nav-link text-uppercase"
                   >
                     {link.text}
                   </Link>
                 </li>
               )
             })}
-            <li className="nav-item ml-sm-5">
+            <li className="navbar_customize-menu-cart nav-item ml-sm-5">
               <FaCartArrowDown className="cart-icon" />
             </li>
           </ul>
