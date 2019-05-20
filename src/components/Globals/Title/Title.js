@@ -5,7 +5,7 @@ const Title = ({ title }) => {
     <div className="row">
       <div className="col text-center mb-3">
         <h1
-          style={{ color: "#757575" }}
+          style={{ color: "#006400" }}
           className="display-4 text-uppercase font-weight-bold"
         >
           {title}

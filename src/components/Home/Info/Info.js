@@ -20,7 +20,7 @@ const Info = () => {
               quae repellendus. Facilis magnam eos ducimus.
             </p>
             <Link to="/about/">
-              <button className="btn-brown btn text-uppercase p-3">
+              <button className="btn-orange btn text-uppercase p-3">
                 Tell me more
               </button>
             </Link>

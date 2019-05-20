@@ -1,0 +1,51 @@
+$mainBrown: #5d4037;
+$accentOrange: #ef5b26;
+$textLightBrown: #d7ccc8;
+$darkGrey: #9e9e9e;
+$lightGrey: #bdbdbd;
+$backgroundLightGrey: #edefed;
+$textGrey: #757575;
+$mainWhite: #ffffff;
+$mainBlack: #212121;
+$mainGreen: #006400;
+$lightGreen: #6b8e23;
+
+.menu {
+  background: $backgroundLightGrey;
+  color: $mainBlack;
+
+  &-photo {
+    height: 50px;
+  }
+
+  &-text {
+    &-title,
+    &-price {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    &-price {
+      color: #ef5b26;
+    }
+    &-description {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+  }
+
+  &-btn-orange {
+    background-color: transparent;
+    border: 2px solid $mainGreen;
+    width: 10%;
+    color: $darkGrey;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0;
+
+    &:hover {
+      color: $mainBlack;
+    }
+  }
+}
