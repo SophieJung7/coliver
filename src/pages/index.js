@@ -6,6 +6,8 @@ import { graphql } from "gatsby"
 import BackgroundModule from "../components/Globals/BackgroundModule/BackgroundModule"
 import Info from "../components/Home/Info/Info"
 import Menu from "../components/Home/Menu/Menu"
+import Products from "../components/Home/Products/Products"
+import Contact from "../components/Home/Contact/Contact"
 
 const IndexPage = ({ data }) => {
   const backgroundImg = data.img.childImageSharp.fluid
@@ -20,6 +22,8 @@ const IndexPage = ({ data }) => {
       />
       <Info />
       <Menu items={data.menu} />
+      <Products />
+      <Contact />
     </Layout>
   )
 }

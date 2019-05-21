@@ -1,0 +1,32 @@
+$mainBrown: #5d4037;
+$accentOrange: #ef5b26;
+$textLightBrown: #d7ccc8;
+$darkGrey: #9e9e9e;
+$lightGrey: #bdbdbd;
+$backgroundLightGrey: #edefed;
+$textGrey: #757575;
+$mainWhite: #ffffff;
+$mainBlack: #212121;
+$mainGreen: #006400;
+$lightGreen: #6b8e23;
+
+.product-text {
+  font-family: "Roboto", sans-serif;
+  &-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  &-price {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+}
+.btn-green {
+  background-color: transparent;
+  border: 2px solid $mainGreen;
+  width: 40%;
+  color: $darkGrey;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0;
+}

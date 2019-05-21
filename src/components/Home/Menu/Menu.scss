@@ -10,7 +10,8 @@ $mainBlack: #212121;
 $mainGreen: #006400;
 $lightGreen: #6b8e23;
 
-.menu {
+.menu,
+.green-background {
   background: $backgroundLightGrey;
   color: $mainBlack;
 
@@ -35,7 +36,7 @@ $lightGreen: #6b8e23;
     }
   }
 
-  &-btn-orange {
+  &-btn-green {
     background-color: transparent;
     border: 2px solid $mainGreen;
     width: 10%;
