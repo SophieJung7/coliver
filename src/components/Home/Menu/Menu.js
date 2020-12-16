@@ -99,7 +99,7 @@ export default class Menu extends Component {
             <Title title="Best of our menu" />
             <div className="row">
               <div className="col-10 col-sm-6 mx-auto text-center text-capitalize">
-                <h1>There are no items to display. </h1>
+                <h1>There are many items to display. </h1>
               </div>
             </div>
           </div>
